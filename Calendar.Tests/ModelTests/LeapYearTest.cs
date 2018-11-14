@@ -9,7 +9,9 @@ namespace Calendar.Tests
     [TestMethod] // Tells the compiler that this code should be run by MSTest
     public void IsLeapYear_NumberDivisibleByFour_True()
     {
-      // testing code will go here
+      // The code below creates an instance of the LeapYear class called testLeapYear. The Assert method AreEqual() is then called on the value true and the expected behavior of the app. In this case it sees if 2012 is divisible by four and compares it to a true boolean.
+      LeapYear testLeapYear = new LeapYear();
+      Assert.AreEqual(true, testLeapYear.IsLeapYear(2012));
     }
   }
 }
