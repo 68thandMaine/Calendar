@@ -13,5 +13,12 @@ namespace Calendar.Tests
       LeapYear testLeapYear = new LeapYear();
       Assert.AreEqual(true, testLeapYear.IsLeapYear(2012));
     }
+    [TestMethod] // New TestMethods must be contained within their own public voids.
+    public void IsLeapYear_NumberDivisibleByFour_False()
+    {
+      // The next simplest behavior this program will exhibit should be checking if a number is not divisible by four. The code below checks to see if a false = false statement is given to the AreEqual method.
+      LeapYear testLeapYear = new LeapYear();
+      Assert.AreEqual(false, testLeapYear.IsLeapYear(1999));
+    }
   }
 }
