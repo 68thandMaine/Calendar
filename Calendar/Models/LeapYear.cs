@@ -4,8 +4,18 @@ namespace Calendar
   {
     public bool IsLeapYear(int year)
     {
-      // logic will go here. For now we set the return to false so that when we test this function it fails first.
-      return false;
+      if (year % 400 == 0)
+      {
+        return true;
+      }
+      else if (year % 100 == 0)
+      {
+        return false;
+      }
+      else
+      {
+        return year % 4 == 0;
+      }
     }
   }
 }
