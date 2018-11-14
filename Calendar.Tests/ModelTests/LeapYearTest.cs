@@ -23,9 +23,10 @@ namespace Calendar.Tests
     [TestMethod]
     public void IsLeapYear_MultiplesofOneHundred_False()
     {
-      // The code below tests to see if the year 1900 is a multiple of 100. If it is the test will fail because we are comparing a false boolean and a true boolean. If the number is not a multiple of 100 then the test will pass because we would be comparing a false to a false.
+      // The code below will pass if a year is a multiple of 100. This is because the in IsLeapYear method in th LeapYear.cs file we are passing in the year 1900. 1900 is a multiple of 100 so a false is returned. the AreEqual method then compares a false to a return value of false. Hence why this will pass.
       LeapYear testLeapYear = new LeapYear();
       Assert.AreEqual(false, testLeapYear.IsLeapYear(1900));
     }
+
   }
 }
