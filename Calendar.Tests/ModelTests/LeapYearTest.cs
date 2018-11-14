@@ -7,6 +7,9 @@ namespace Calendar.Tests
   public class LeapYearTest
   {
     [TestMethod] // Tells the compiler that this code should be run by MSTest
-    //Test method will go here
+    public void IsLeapYear_NumberDivisibleByFour_True()
+    {
+      // testing code will go here
+    }
   }
 }
